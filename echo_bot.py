@@ -52,7 +52,7 @@ def handle_text_message(event):
             event.reply_token,
             [
                 TextSendMessage(text="From: " + profile.display_name),
-                TextSendMessage(text="Received message: " + text)
+                TextSendMessage(text="Received messages: " + text + "だってさ")
             ],
         )
     else:
