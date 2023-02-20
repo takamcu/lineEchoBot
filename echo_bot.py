@@ -51,8 +51,10 @@ def handle_text_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="From: " + profile.display_name),
-                TextSendMessage(text="Received messages: " + text + "だってさ")
+                TextSendMessage(text="ふむふむ、なるほど…"),
+                TextSendMessage(text="「" + text + "」ですか…。"),
+                TextSendMessage(text="すみません、この bot は現在そのメッセージには対応できません。"),
+                TextSendMessage(text="さらなるアップデートを気長に待つか、 ChatGPT さんなどに相談してみてください！")
             ],
         )
     else:
